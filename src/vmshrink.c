@@ -965,8 +965,10 @@ static int enum_disk(char *path, uint32_t *total, uint32_t *avail)
 			!strcmp(mnt->mnt_type, "ext") ||
 			!strcmp(mnt->mnt_type, "ext2") ||
 			!strcmp(mnt->mnt_type, "ext3") ||
+			!strcmp(mnt->mnt_type, "ext4") ||
 			!strcmp(mnt->mnt_type, "fat") ||
 			!strcmp(mnt->mnt_type, "gfs") ||
+			!strcmp(mnt->mnt_type, "btrfs") ||
 			//!strcmp(mnt->mnt_type, "hfs") ||
 			//!strcmp(mnt->mnt_type, "jfs") ||
 			!strcmp(mnt->mnt_type, "minix") ||
@@ -974,6 +976,7 @@ static int enum_disk(char *path, uint32_t *total, uint32_t *avail)
 			!strcmp(mnt->mnt_type, "ntfs") ||
 			//!strcmp(mnt->mnt_type, "qnx4") ||
 			!strcmp(mnt->mnt_type, "reiserfs") ||
+			!strcmp(mnt->mnt_type, "reiser4") ||
 			!strcmp(mnt->mnt_type, "sysv") ||
 			!strcmp(mnt->mnt_type, "ufs") ||
 			!strcmp(mnt->mnt_type, "umsdos") ||
